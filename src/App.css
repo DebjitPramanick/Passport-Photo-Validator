@@ -1,0 +1,51 @@
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.drop-zone{
+    border: 1px dashed #c3c3c3;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.drop-zone input{
+    box-sizing: border-box;
+}
+
+button{
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #00b6ad;
+    border-radius: 2px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+}
+
+.result{
+    margin-top: 40px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.img-container{
+    flex-basis: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img{
+    max-width: 100%;
+}
+
+.text{
+    flex-basis: 50%;
+}
