@@ -1,6 +1,16 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container{
     max-width: 1400px;
     margin: auto;
+}
+
+.header{
+    background-color: #00b6ad;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .drop-zone{
@@ -17,7 +27,7 @@
 button{
     display: block;
     width: 200px;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 10px;
     background-color: #00b6ad;
     border-radius: 2px;
@@ -40,6 +50,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 6px;
+    border: #00b6ad 2px solid;
+    padding: 10px;
 }
 
 .img-container img{
@@ -48,4 +61,30 @@ button{
 
 .text{
     flex-basis: 50%;
+}
+
+.text p{
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .result{
+        display: block;
+    }
+
+    .img-container{
+        padding: 10px 0;
+        margin: 0rem;
+        width: 100%;
+        max-height: 40vh !important;
+    }
+
+    .img-container img{
+        width: none;
+        max-height: 30vh;
+    }
+
+    .text{
+        margin-top: 20px;
+    }
 }

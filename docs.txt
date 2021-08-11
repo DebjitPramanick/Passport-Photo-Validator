@@ -1,0 +1,10 @@
+1. Create Lambda Function with Python 3.7
+2. Write Python code in source section
+3. Attach AmazonRekognition Policy to IAM user
+4. Create a REST API using API Gateway
+   - Craete resource
+   - Create POST method
+   - Enable CORS
+   - Test API with example request body
+   - Deploy API
+   - Try API in Postman

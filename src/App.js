@@ -20,15 +20,18 @@ const App = () => {
 
     return (
         <div className="container">
-            <div {...getRootProps()} className="drop-zone">
-                <input {...getInputProps()} />
-                {
-                    isDragActive ?
-                        <p>Drop the files here ...</p> :
-                        <p>Drag 'n' drop some files here, or click to select files</p>
-                }
-            </div>
-            <button>Upload</button>
+            <div className="header">Passport Photo Validator</div>
+            {!img && (
+                <div {...getRootProps()} className="drop-zone">
+                    <input {...getInputProps()} />
+                    {
+                        isDragActive ?
+                            <p>Drop the files here ...</p> :
+                            <p>Drag 'n' drop some files here, or click to select files</p>
+                    }
+                </div>
+            )}
+            
 
             {img && (
                 <div className="result">
@@ -36,10 +39,13 @@ const App = () => {
                         <img src={img} alt="/" />
                     </div>
                     <div className="text">
-                        This image is not passport.
+                        <button>Check</button>
+                        <p>This image is not passport.</p>
                     </div>
                 </div>
             )}
+            
+            
 
         </div>
     )
